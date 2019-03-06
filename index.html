@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Szachownica Position Absolute</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-top: 50px;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+
+        .withBackground {
+            background-image: url("bg2.jpg");
+            background-size: 170%;
+            background-position-x: -38vw;
+            background-attachment: fixed;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav {
+            background-color: yellowgreen;
+            margin-top: -50px;
+        }
+
+        nav ul {
+
+            list-style: none;
+            padding: 15px 20px 15px 120px;
+            max-width: 1280px;
+        }
+
+
+        nav ul li {
+            float: left;
+            font-size: 1.5rem;
+            width: 16%;
+            margin: 0 10px;
+            text-align: center;
+            /*border: 1px solid black;*/
+            margin: 0 5px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 {
+            font-size: 45px;
+            text-align: center;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+        .adress,
+        .contact,
+        .howItWorks,
+        .aboutUs,
+        .withPrices,
+        .withOffer,
+        .withlogo {
+            margin: 0 10vw;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="clearfix">
+        <ul class="clearfix">
+            <li><a href="">Home</a></li>
+            <li><a href="">Oferta</a></li>
+            <li><a href="">Cennik</a></li>
+            <li><a href="">Jak to działa?</a></li>
+            <li><a href="">Kontakt</a></li>
+        </ul>
+
+
+    </nav>
+    <section class="withBackground">
+        <section style="height:100px"></section>
+        <section class="withlogo">
+            <div class="logo" width="480px" heigth="310px" border="1px solid black">
+                <center><img src="logo.png" alt="fit kaloria"></center>
+            </div>
+            <div class="textlogo" style="text-align:center; font-size:2.2rem">
+
+            </div>
+        </section>
+        <p style="font-size:2.2rem; padding:10px 20px; text-align: center">Masz problem z trzymaniem się diety, przygotowaniem posiłków i różnorodnością dań? Teraz możesz jeść smacznie i zdrowo. Zadbaj o swoją sylwetkę z Lekką kalorią!</p>
+        <section class="withOffer">
+            <h2>Oferta</h2>
+            <p>W ofercie posiadamy dietę klasyczną, wegetariańską z rybami oraz dietę detoks 1000 kalorii. Detoks składa się z 3 soków i 2 posiłków w dzień wprowadzający oraz 4 soków i jednego posiłku w kolejne dni</p><br>
+            <diV>
+                <div style="width: 400px; height: 400px; display: inline-block; margin: 10px; color: white">
+                    <div style="height: 50%; background-image: url('pic1.jpg'); background-size: cover"></div>
+                    <div style=" height: 50%; background-color: black; opacity: 0.6; float: left">
+                        <h2 style="font-size: 30px; padding-top:20px">Dieta 1200 kcal</h2>
+                        <p>Dieta przeznaczona dla osób, które chcą szybko widzieć efekty odchudzania. Jest to dieta niskokaloryczna dla osób z nadwagą. Nie jest przeznaczona dla osób z masą ciała w normie.</p>
+                    </div>
+                </div>
+                <div style="width: 400px; height: 400px; display: inline-block; margin: 10px; color: white">
+                    <div style="height: 50%; background-image: url('pic2.jpg'); background-size: cover"></div>
+                    <div style=" height: 50%; background-color: black; opacity: 0.6; float: left">
+                        <h2 style="font-size: 30px; padding-top:20px">Dieta 1500 kcal</h2>
+                        <p>Dla osób borykająca się z problemem otyłości lub nadwagi. Tym które chcą zawalczyć o swoja sylwetkę i własne zdrowie. Dieta ta jest dostosowana dla osób o masie ciała w normie by ją dalej utrzymać.</p>
+                    </div>
+                </div>
+            </diV>
+            <diV>
+                <div style="width: 400px; height: 400px; display: inline-block; margin: 10px; color: white">
+                    <div style="height: 50%; background-image: url('pic3.jpg'); background-size: cover"></div>
+                    <div style=" height: 50%; background-color: black; opacity: 0.6; float: left">
+                        <h2 style="font-size: 30px; padding-top:20px">Dieta 2000 kcal</h2>
+                        <p>Dieta dla osób, których masa jest w normie i chcą ją utrzymać dbając o zdrowe żywienie. Jest to również dieta dla osób z otyłością III stopnia (ważących ponad 140kg). Dla tej grupy osób będzie to wstępna dieta odchudzająca, dzięki której zaczną gubić zbędne kilogramy w przyjemny i zdrowy sposób.</p>
+                    </div>
+                </div>
+                <div style="width: 400px; height: 400px; display: inline-block; margin: 10px; color: white; opacity:1">
+                    <div style="height: 50%; background-image: url('pic4.jpg'); background-size: cover">
+
+                    </div>
+                    <div style=" height: 50%; background-color: black; opacity: 0.6; float: left">
+                        <h2 style="font-size: 30px; padding-top:20px">Dieta 2500 kcal</h2>
+                        <p>Dla osób borykająca się z problemem otyłości lub nadwagi. Tym które chcą zawalczyć o swoja sylwetkę i własne zdrowie. Dieta ta jest dostosowana dla osób o masie ciała w normie by ją dalej utrzymać.</p>
+                    </div>
+                </div>
+            </diV>
+
+            <p style="padding: 10px">Zestaw light box jest przeznaczony głównie do pracy oraz dla osób, które część posiłków chca przygotowywać sami.
+                Kaloryczność light boxu i diety 3 posiłki podawana jest dla całego dnia. Należy zatem uzupełnić 2 brakujące posiłki,
+                żeby uzyskać daną kaloryczność. Light box składa się z II śniadania, obiadu i podwieczorka.</p>
+            <center><button style="background-color: yellowgreen; border-radius: 10px; padding: 25px; margin-bottom: 10px; font-weight: 700; font-size:20px">
+                    Sprawdz nasze ceny
+                </button></center>
+        </section>
+        <section class="withPrices">
+            <h2>Cennik</h2>
+            <p>10% zniżki za polecenia(zamówienie 2 lub więcej zestawów pod 1 lub więcej adresów)
+                Zestaw próbny do 3 dni z 10% rabatem</p>
+            <div>
+                <div style="display: inline-block; margin: 10px">
+                    <table>
+                        <tr>
+                            <td style="width:110px; height: 40px"></td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">5 posiłków</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">3 posiłki</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">Light Box</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">1-15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">43 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">37 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">33 zł</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">>15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">41 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">35 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">31 zł</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div style="display: inline-block; margin: 10px">
+                    <table>
+                        <tr>
+                            <td style="width:110px; height: 40px"></td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">5 posiłków</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">3 posiłki</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">Light Box</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">1-15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">43 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">37 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">33 zł</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">>15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">41 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">35 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">31 zł</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+
+            <div>
+                <div style="display: inline-block; margin: 10px">
+                    <table>
+                        <tr>
+                            <td style="width:110px; height: 40px"></td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">5 posiłków</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">3 posiłki</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">Light Box</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">1-15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">43 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">37 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">33 zł</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">>15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">41 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">35 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">31 zł</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div style="display: inline-block; margin: 10px">
+                    <table>
+                        <tr>
+                            <td style="width:110px; height: 40px"></td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">5 posiłków</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">3 posiłki</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">Light Box</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">1-15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">43 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">37 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">33 zł</td>
+                        </tr>
+                        <tr>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: yellowgreen">>15 dni</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">41 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">35 zł</td>
+                            <td style="width:110px; height: 40px; text-align: center; background-color: white">31 zł</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <button></button>
+
+            <center><button style="background-color: yellowgreen; padding: 20px; margin-bottom: 10px; font-weight: 700; font-size:20px">
+                    Dieta detox - 5 dni - 250zł
+                </button>
+                <p>Cenniki przedstawiają cenę za dzień diety</p>
+                <button style="background-color: yellowgreen; border-radius: 10px; padding: 25px; margin-bottom: 10px; font-weight: 700; font-size:20px">
+                    Jak zamówić ?
+                </button>
+            </center>
+        </section>
+        <section class="aboutUs">
+            <h2>O nas</h2>
+
+            <div class="clearfix">
+
+                <div style="width: 45%; height: 250px; float: left; margin: 10px">
+                    <h2 style="font-size: 30px; padding-top:20px">Po pierwsze zdrowie!</h2>
+                    <p style="font-size: 16px; color: black">Nasza oferta to zbilansowana dieta według kaloryczności oraz zawartości składników odżywczych, witamin i minerałów.
+                        Odpowiednie rozłożenie wielkości oraz składu posiłków w ciągu dnia zapewnia prawidłowe funkcjonowanie organizmu o każdej porze dnia.
+                        O właściwy bilans, odpowiednie przygotowanie oraz świeże i zdrowe składniki dbają dyplomowani dietetycy.
+                        Pomagamy w redukcji wagi oraz w utrzymania ciała i ducha w świetnej kondycji.</p>
+                </div>
+                <div style="width: 45%; height: 250px; float: left;margin: 10px">
+                    <h2 style="font-size: 30px; padding-top:20px">Wygoda</h2>
+                    <p style="font-size: 16px">Dostarczamy zestawy w godzinach 18-23.
+                        Zapewniamy elastyczność działania dla naszych klientów. Mogą Państwo wybrać dowolne dni dostawy, robić przerwę w dostawach cateringu dietetycznego, a także skonsultować z nami godziny dostaw.</p>
+                </div>
+            </div>
+
+            <div class="clearfix">
+
+                <div style="width: 45%; height: 250px; float: left; margin: 10px">
+                    <h2 style="font-size: 30px; padding-top:20px">Nowe smaki</h2>
+                    <p style="font-size: 16px; color: black">Nasze posiłki są pyszne i niebanalne! Przygotowywane kompozycje składników rozpieszczają podniebienia i cieszą wzrok.
+                        Regularnie zmieniamy nasze menu i dodajemy nowe smaki, żeby ciągle pozytywnie Was zaskakiwać.
+                        Bazujemy na tradycyjnej kuchni w ciekawym wydaniu oraz dodajemy do tego elementy kuchni świata.</p>
+                </div>
+                <div style="width: 45%; height: 250px; float: left;margin: 10px">
+                    <h2 style="font-size: 30px; padding-top:20px">Rozsądna cena :)</h2>
+                    <p style="font-size: 16px">Ceny naszych diet są niewygórowane i nie oszczędzamy przy tym na jakości.
+                        Zamów zestaw próbny do 3 dni z 10% zniżką i sprawdź nas! :)
+                        Poleć nasz catering znajomemu i skorzystajcie z 10% rabatu na wasze zamówienia.
+                        Przy większych zamówieniach odezwij się do nas i ustalimy cenę.</p>
+                </div>
+            </div>
+        </section>
+        <section class="howItWorks">
+            <h2>Jak to działa ?</h2>
+            <div class="clearfix">
+                <div style="width:30%; height: 250px; margin: 5px; border: 1px solid black; float: left; background-color: white; text-align: center"><i class="far fa-comments" style="font-size: 100px"></i>
+                    <h2>1.</h2>
+                    <p>Wybierz lub skonsultuj z nami odpowiednią dla siebie kaloryczność diety. </p>
+                </div>
+                <div style="width:30%; height: 250px; margin: 5px; border: 1px solid black; float: left; background-color: white; text-align: center"><i class="fas fa-phone-volume" style="font-size: 100px"></i>
+                    <h2>2.</h2>
+                    <p>Zamawiasz posiłki - możesz to zrobić telefonicznie, przesłać zamówienie mailowo lub poprzez formularz w zakładce "zamów online"</p>
+                </div>
+                <div style="width:30%; height: 250px; margin: 5px; border: 1px solid black; float: left; background-color: white; text-align: center"><i class="fas fa-car-side" style="font-size: 100px"></i>
+                    <h2>3.</h2>
+                    <p>Dostarczamy Twój zestaw pod wskazany adres.</p>
+                </div>
+                <p style="text-align: center; line-height: 20px">Zamówienia przyjmujemy do 12:00 w dzień dostawy.
+                    Dostawy wieczorne 18-23: Warszawa, Sulejówek, Dębe Wielkie, Otwock . Mińsk Mazowiecki i okolice - 16.30-18.00.
+                    W celu uzyskania informacji o dokładniejszym przedziale godzinowym dostawy prosimy o kontakt z nami.
+                    Teraz także dostawy nocno-poranne w godzinach 3-9.
+                    Strefy dostawy nocno-porannej:
+                    Warszawa, Piaseczno, Konstancin, Józefosław, Michałowice, Raszyn, Ożarów Mazowiecki, Babice, Łomianki, Marki, Ząbki, Blizne, Józefów</p>
+                <center><button style="background-color: yellowgreen; border-radius: 10px; padding: 20px; margin-bottom: 10px; font-weight: 700; font-size:20px">
+                        Odezwij się do nas
+                    </button>
+
+                </center>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Kontakt:</h2>
+            <p style="text-align: center; line-height: 20px">email: lekkakaloria@gmail.com<br>
+                tel: 516 187 216<br>
+                Strefy darmowej dostawy:<br>
+                Warszawa, Mińsk Mazowiecki, Sulejówek, Dębe Wielkie, Otwock, Piaseczno, Konstancin-Jeziorna, Józefosław, Michałowice, Raszyn, Ożarów Mazowiecki, Babice, Łomianki, Marki, Ząbki, Blizne, Józefów </p>
+        </section>
+        <section class="adress">
+            <h2>Dane firmy:</h2>
+            <p style="text-align: center; line-height: 20px">
+                Catering dietetyczny "Lekka kaloria" Dawid Szczygielski<br>
+                Cieszkowizna 141<br>
+                21-400 Łuków<br>
+                NIP: 8252104849<br>
+                REGON: 366122024<br>
+                Numer konta: 43 1050 1894 1000 0092 3716 1832
+            </p>
+        </section>
+    </section>
+
+
+    <section></section>
+    <section></section>
+</body>
+
+</html>
